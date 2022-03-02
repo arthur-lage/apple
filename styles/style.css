@@ -15,12 +15,21 @@
   --header-height: 4.4rem;
 
   --link-blue: #06c;
+
+  --link-black: #424245;
+  --text: #222;
+  --footer-text: #6e6e73;
+  --footer-divisor-color: #d2d2d7;
+  --footer-directory-title: #1d1d1f;
+  --footer-directory-link: #424245;
+
   --white: #fff;
   --black: #000;
+
   --background: #fff;
-  --text: #222;
   --header-background: #000000eb;
   --shop-online-background: #f5f5f7;
+  --footer-background: #f5f5f7;
 
   --carnival-marquee-animation: calc(var(--marquee-elements) * 3s);
   --carnival-card-width: 23.4rem;
@@ -49,6 +58,15 @@ a.link:hover {
   text-decoration: underline;
 }
 
+a.footer-link {
+  text-decoration: none;
+  color: var(--link-black);
+}
+
+a.footer-link:hover {
+  text-decoration: underline;
+}
+
 /* DEFAULT STYLE CLASSES END */
 
 /* BODY START */
@@ -70,14 +88,6 @@ header {
   background: var(--header-background);
 }
 
-header nav {
-  max-width: 98rem;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 header a {
   opacity: 0.75;
   transition: 0.2s ease;
@@ -97,6 +107,11 @@ header nav {
   height: 100%;
   display: flex;
   align-items: center;
+  max-width: 98rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header nav ul {
@@ -299,6 +314,7 @@ header nav button:hover {
 
 .back-to-school {
   height: 62.5rem;
+  position: relative;
 }
 
 .back-to-school .text {
@@ -306,8 +322,10 @@ header nav button:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  position: relative;
-  top: 200px;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .back-to-school .text span {
@@ -357,3 +375,198 @@ header nav button:hover {
 }
 
 /* BACK TO SCHOOL END */
+
+/* IPHONE 13 START */
+
+.iphone-13 {
+  height: 62.5rem;
+  position: relative;
+}
+
+.iphone-13 .text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.iphone-13 .text h2 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.002em;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.iphone-13 .text h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1;
+  letter-spacing: .009em;
+  color: var(--text);
+}
+
+.iphone-13 .text .cta-links {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 5rem;
+}
+
+.iphone-13 .text .cta-links a {
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: .012em;
+  text-align: center;
+}
+
+.iphone-13 .text .cta-links i {
+  font-size: 1.2rem;
+  color: var(--link-blue);
+  margin-left: 0rem;
+}
+
+.iphone-13 .image {
+  background: #FBFBFD;
+}
+
+.iphone-13 .image img {
+  width: 100%;
+  height: 61.7rem;
+  object-fit: cover;
+}
+
+/* IPHONE 13 END */
+
+/* PROMOS END */
+
+
+
+/* PROMOS END */
+
+/* FOOTER START */
+
+.footer-wrapper {
+  width: 100%;
+  background: var(--footer-background);
+  padding-top: 1.6rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 98rem;
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+
+footer .foot-notes p {
+  color: var(--footer-text);
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.06rem;
+  line-height: 1.3;
+  margin-bottom: .8rem;
+}
+
+footer .foot-notes p:last-child {
+  margin-bottom: 0rem;
+}
+
+footer .footer p {
+  font-size: 1.2rem;
+  color: var(--footer-text);
+  letter-spacing: .07rem;
+  line-height: 1.3;
+}
+
+footer .footer-divisor {
+  width: 100%;
+  height: 1px;
+  margin: .8rem 0;
+  background: var(--footer-divisor-color);
+}
+
+footer .footer-divisor.margin-large {
+  margin: 1.6rem 0;
+}
+
+footer .directory {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0 2rem 0;
+}
+
+footer .directory .directory-column {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .directory .directory-column .directory-title{
+  font-weight: 500;
+  letter-spacing: .05rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: var(--footer-directory-title);
+  margin-bottom: .8rem;
+}
+
+footer .directory .directory-column .directory-title.with-margin-top{
+  margin-top: 1.3rem;
+  margin-bottom: .8rem;
+}
+
+footer .directory .directory-column .directory-list{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+footer .directory .directory-column .directory-list .directory-item {
+  margin-bottom: .8rem;
+}
+
+footer .directory .directory-column .directory-list .directory-item a {
+  font-weight: 300;
+  letter-spacing: .07rem;
+  font-size: 1.2rem;
+  display: block;
+  max-width: 12.5rem;
+  line-height: 1.3;
+  color: var(--footer-directory-link);
+}
+
+footer .copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--footer-text);
+  margin-bottom: .8rem;
+  letter-spacing: .04rem;
+}
+
+footer .legal-links {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+footer .legal-links .legal-link-divisor {
+  height: 1.6rem;
+  width: 1px;
+  margin: 0 1rem;
+  background: var(--footer-divisor-color);
+}
+
+footer .legal-links a {
+  letter-spacing: 0.08rem;
+}
+
+/* FOOTER END */
