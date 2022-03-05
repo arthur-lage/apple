@@ -330,7 +330,7 @@ header nav button:hover {
 
 .back-to-school .text span {
   color: #bf4800;
-  font-size: 1.8rem;  
+  font-size: 1.8rem;
   white-space: nowrap;
   font-weight: 500;
   margin: 0.8rem 0;
@@ -354,7 +354,7 @@ header nav button:hover {
 .back-to-school .text .cta-links a {
   font-size: 1.9rem;
   font-weight: 400;
-  letter-spacing: .012em;
+  letter-spacing: 0.012em;
   text-align: center;
 }
 
@@ -408,7 +408,7 @@ header nav button:hover {
   font-weight: 400;
   margin-bottom: 1rem;
   line-height: 1;
-  letter-spacing: .009em;
+  letter-spacing: 0.009em;
   color: var(--text);
 }
 
@@ -423,7 +423,7 @@ header nav button:hover {
   font-size: 1.9rem;
   font-weight: 400;
   line-height: 1.2;
-  letter-spacing: .012em;
+  letter-spacing: 0.012em;
   text-align: center;
 }
 
@@ -434,7 +434,7 @@ header nav button:hover {
 }
 
 .iphone-13 .image {
-  background: #FBFBFD;
+  background: #fbfbfd;
 }
 
 .iphone-13 .image img {
@@ -447,7 +447,393 @@ header nav button:hover {
 
 /* PROMOS END */
 
+main {
+  max-width: 100vw;
+}
 
+.promos {
+  max-width: 100vw;
+  padding: 1.2rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.promos .iphone-13-promo {
+  position: relative;
+}
+
+.promos .iphone-13-promo .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.promos .iphone-13-promo .text h2 {
+  font-size: 4rem;
+  color: var(--white);
+  letter-spacing: 0.05rem;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.promos .iphone-13-promo .text h3 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #fec2eb;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  min-width: max-content;
+}
+
+.promos .iphone-13-promo .text .cta-links {
+  display: flex;
+  align-items: center;
+}
+
+.promos .iphone-13-promo .text .cta-links .cta-link {
+  display: flex;
+  align-items: center;
+}
+
+.promos .iphone-13-promo .text .cta-links .cta-link:last-child {
+  margin-left: 3.2rem;
+}
+
+.promos .iphone-13-promo .text .cta-links .cta-link a {
+  font-size: 1.9rem;
+}
+
+.promos .iphone-13-promo .text .cta-links .cta-link i {
+  color: #06c;
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+}
+
+.promos .iphone-13-promo .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.promos .carnival-promo {
+  position: relative;
+}
+
+.promos .carnival-promo .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+.promos .carnival-promo .text h2 {
+  font-size: 4rem;
+  color: var(--text);
+  letter-spacing: 0.05rem;
+  width: max-content;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.promos .carnival-promo .text h3 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  min-width: max-content;
+}
+
+.promos .carnival-promo .text .cta-links {
+  display: flex;
+  align-items: center;
+}
+
+.promos .carnival-promo .text .cta-links .cta-link {
+  display: flex;
+  align-items: center;
+}
+
+.promos .carnival-promo .text .cta-links .cta-link:last-child {
+  margin-left: 3.2rem;
+}
+
+.promos .carnival-promo .text .cta-links .cta-link a {
+  font-size: 1.9rem;
+}
+
+.promos .carnival-promo .text .cta-links .cta-link i {
+  color: #06c;
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+}
+
+.promos .carnival-promo .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.promos .come-to-iphone-promo {
+  position: relative;
+}
+
+.promos .come-to-iphone-promo .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+.promos .come-to-iphone-promo .text h2 {
+  font-size: 4rem;
+  color: var(--text);
+  letter-spacing: 0.05rem;
+  width: max-content;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.promos .come-to-iphone-promo .text .cta-links {
+  display: flex;
+  align-items: center;
+}
+
+.promos .come-to-iphone-promo .text .cta-links {
+  display: flex;
+  align-items: center;
+}
+
+.promos .come-to-iphone-promo .text .cta-links a {
+  font-size: 1.9rem;
+}
+
+.promos .come-to-iphone-promo .text .cta-links i {
+  color: #06c;
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+}
+
+.promos .come-to-iphone-promo .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.promos .fitness-plus-promo {
+  position: relative;
+}
+
+.promos .fitness-plus-promo .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+.promos .fitness-plus-promo .text h2 {
+  font-size: 4rem;
+  color: var(--black);
+  letter-spacing: 0.05rem;
+  width: max-content;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.promos .fitness-plus-promo .text h3 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  min-width: max-content;
+}
+
+.promos .fitness-plus-promo .text .cta-links {
+  display: flex;
+  align-items: center;
+}
+
+.promos .fitness-plus-promo .text .cta-links .cta-link {
+  display: flex;
+  align-items: center;
+}
+
+.promos .fitness-plus-promo .text .cta-links .cta-link:last-child {
+  margin-left: 3.2rem;
+}
+
+.promos .fitness-plus-promo .text .cta-links .cta-link a {
+  font-size: 1.9rem;
+}
+
+.promos .fitness-plus-promo .text .cta-links .cta-link i {
+  color: #06c;
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+}
+
+.promos .fitness-plus-promo .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.promos .air-pods-promo {
+  position: relative;
+}
+
+.promos .air-pods-promo .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 7.5%;
+  transform: translateX(-50%);
+}
+
+.promos .air-pods-promo .text h2 {
+  font-size: 4rem;
+  color: var(--text);
+  letter-spacing: 0.05rem;
+  width: max-content;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.promos .air-pods-promo .text h3 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  min-width: max-content;
+}
+
+.promos .air-pods-promo .text .cta-links {
+  display: flex;
+  align-items: center;
+}
+
+.promos .air-pods-promo .text .cta-links .cta-link {
+  display: flex;
+  align-items: center;
+}
+
+.promos .air-pods-promo .text .cta-links .cta-link:last-child {
+  margin-left: 3.2rem;
+}
+
+.promos .air-pods-promo .text .cta-links .cta-link a {
+  font-size: 1.9rem;
+}
+
+.promos .air-pods-promo .text .cta-links .cta-link i {
+  color: #06c;
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+}
+
+.promos .air-pods-promo .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.promos .apple-tv-promo {
+  position: relative;
+}
+
+.promos .apple-tv-promo .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
+
+.promos .apple-tv-promo .text img {
+  margin-bottom: 1.5rem;
+}
+
+.promos .apple-tv-promo .text h2 {
+  font-size: 4rem;
+  color: var(--white);
+  letter-spacing: 0.05rem;
+  width: max-content;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.promos .apple-tv-promo .text h3 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  min-width: max-content;
+}
+
+.promos .apple-tv-promo .text .cta-links {
+  display: flex;
+  align-items: center;
+}
+
+.promos .apple-tv-promo .text .cta-links .cta-link {
+  display: flex;
+  align-items: center;
+}
+
+.promos .apple-tv-promo .text .cta-links .cta-link:last-child {
+  margin-left: 3.2rem;
+}
+
+.promos .apple-tv-promo .text .cta-link a {
+  font-size: 1.8rem;
+  color: var(--white);
+  letter-spacing: 0.05rem;
+}
+
+.promos .apple-tv-promo .text .cta-link i {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-left: 0.6rem;
+}
+
+.promos .apple-tv-promo .image img {
+  width: 100%;
+  height: 100%;
+}
 
 /* PROMOS END */
 
@@ -473,7 +859,7 @@ footer .foot-notes p {
   font-size: 1.2rem;
   letter-spacing: 0.06rem;
   line-height: 1.3;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 footer .foot-notes p:last-child {
@@ -483,14 +869,14 @@ footer .foot-notes p:last-child {
 footer .footer p {
   font-size: 1.2rem;
   color: var(--footer-text);
-  letter-spacing: .07rem;
+  letter-spacing: 0.07rem;
   line-height: 1.3;
 }
 
 footer .footer-divisor {
   width: 100%;
   height: 1px;
-  margin: .8rem 0;
+  margin: 0.8rem 0;
   background: var(--footer-divisor-color);
 }
 
@@ -501,7 +887,7 @@ footer .footer-divisor.margin-large {
 footer .directory {
   display: flex;
   justify-content: space-between;
-  padding: .5rem 0 2rem 0;
+  padding: 0.5rem 0 2rem 0;
 }
 
 footer .directory .directory-column {
@@ -509,33 +895,33 @@ footer .directory .directory-column {
   flex-direction: column;
 }
 
-footer .directory .directory-column .directory-title{
+footer .directory .directory-column .directory-title {
   font-weight: 500;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   font-size: 1.2rem;
   line-height: 1.3;
   color: var(--footer-directory-title);
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
-footer .directory .directory-column .directory-title.with-margin-top{
+footer .directory .directory-column .directory-title.with-margin-top {
   margin-top: 1.3rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
-footer .directory .directory-column .directory-list{
+footer .directory .directory-column .directory-list {
   display: flex;
   list-style: none;
   flex-direction: column;
 }
 
 footer .directory .directory-column .directory-list .directory-item {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 footer .directory .directory-column .directory-list .directory-item a {
   font-weight: 300;
-  letter-spacing: .07rem;
+  letter-spacing: 0.07rem;
   font-size: 1.2rem;
   display: block;
   max-width: 12.5rem;
@@ -548,8 +934,8 @@ footer .copy {
   align-items: center;
   justify-content: space-between;
   color: var(--footer-text);
-  margin-bottom: .8rem;
-  letter-spacing: .04rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.04rem;
 }
 
 footer .legal-links {
