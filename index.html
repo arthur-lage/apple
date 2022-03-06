@@ -28,6 +28,7 @@
     <!-- SCRIPTS START -->
 
     <script src="./scripts/carnival-marquee.js" defer></script>
+    <script src="./scripts/dropdown.js" defer></script>
 
     <!-- SCRIPTS END -->
   </head>
@@ -59,12 +60,39 @@
             </button>
           </li>
           <li>
-            <button>
-              <i
-                style="color: #fff; font-size: 1.6rem"
-                class="fas fa-shopping-bag"
-              ></i>
-            </button>
+            <div class="dropdown" data-dropdown>
+              <button data-dropdown-button id="shopping-cart-button">
+                <i
+                  style="color: #fff; font-size: 1.6rem"
+                  class="fas fa-shopping-bag"
+                ></i>
+              </button>
+              <div class="dropdown-menu">
+                <h3>Sua sacola está vazia.</h3>
+                <div class="cart-links">
+                  <div class="cart-link">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Sacola</span>
+                  </div>
+                  <div class="cart-link">
+                    <i class="fas fa-bookmark"></i>
+                    <span>Itens salvos</span>
+                  </div>
+                  <div class="cart-link">
+                    <i class="fas fa-cube"></i>
+                    <span>Pedidos</span>
+                  </div>
+                  <div class="cart-link">
+                    <i class="fas fa-gear"></i>
+                    <span>Conta</span>
+                  </div>
+                  <div class="cart-link">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Entrar</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
