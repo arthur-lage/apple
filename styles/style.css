@@ -15,10 +15,12 @@
   --header-height: 4.4rem;
 
   --link-blue: #06c;
+  --link-blue-light: #2997ff;
 
   --link-black: #424245;
   --text: #222;
   --footer-text: #6e6e73;
+  --header-divisor-color: #6e6e6e;
   --footer-divisor-color: #d2d2d7;
   --footer-directory-title: #1d1d1f;
   --footer-directory-link: #424245;
@@ -55,6 +57,11 @@ a.link {
   color: var(--link-blue);
 }
 
+a.link-light {
+  text-decoration: none;
+  color: var(--link-blue-light);
+}
+
 a.link:hover {
   text-decoration: underline;
 }
@@ -84,9 +91,14 @@ header {
   width: 100%;
   position: fixed;
   z-index: 9999;
+  padding: 0 2.2rem;
   top: 0;
   height: var(--header-height);
   background: var(--header-background);
+}
+
+header.black {
+  background: var(--black);
 }
 
 header a {
@@ -145,11 +157,11 @@ header nav ul button:hover {
   opacity: 1;
 }
 
-header nav ul .dropdown {
+header nav .dropdown {
   position: relative;
 }
 
-header nav ul .dropdown .dropdown-menu {
+header nav .dropdown .dropdown-menu {
   left: 50%;
   transform: translateX(-50%);
   top: 3.5rem;
@@ -164,7 +176,7 @@ header nav ul .dropdown .dropdown-menu {
   pointer-events: none;
 }
 
-header nav ul .dropdown .dropdown-menu h3 {
+header nav .dropdown .dropdown-menu h3 {
   letter-spacing: 0.05rem;
   text-align: center;
   font-weight: 400;
@@ -173,13 +185,13 @@ header nav ul .dropdown .dropdown-menu h3 {
   font-size: 1.4rem;
 }
 
-header nav ul .dropdown .dropdown-menu .cart-links {
+header nav .dropdown .dropdown-menu .cart-links {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-header nav ul .dropdown .dropdown-menu .cart-links .cart-link {
+header nav .dropdown .dropdown-menu .cart-links .cart-link {
   border-top: 1px solid #d2d2d7;
   width: 100%;
   padding: 1.5rem 0;
@@ -188,23 +200,23 @@ header nav ul .dropdown .dropdown-menu .cart-links .cart-link {
   cursor: pointer;
 }
 
-header nav ul .dropdown .dropdown-menu .cart-links .cart-link span {
+header nav .dropdown .dropdown-menu .cart-links .cart-link span {
   color: #06c;
   letter-spacing: 0.05rem;
   font-size: 1.5rem;
 }
 
-header nav ul .dropdown .dropdown-menu .cart-links .cart-link:hover span {
+header nav .dropdown .dropdown-menu .cart-links .cart-link:hover span {
   text-decoration: underline;
 }
 
-header nav ul .dropdown .dropdown-menu .cart-links .cart-link i {
+header nav .dropdown .dropdown-menu .cart-links .cart-link i {
   color: #06c;
   font-size: 1.5rem;
   margin-right: 1rem;
 }
 
-header nav ul .dropdown.active .dropdown-menu {
+header nav .dropdown.active .dropdown-menu {
   opacity: 1;
   pointer-events: auto;
 }
@@ -324,6 +336,10 @@ header nav .search-section button i {
 
 header nav .search-section button:hover {
   opacity: 1;
+}
+
+header nav .mobile-menu {
+  display: none;
 }
 
 /* HEADER END */
@@ -705,7 +721,7 @@ main {
 }
 
 .promos .iphone-13-promo .text .cta-links .cta-link i {
-  color: #06c;
+  color: #2997ff;
   font-size: 1.2rem;
   margin-left: 0.4rem;
 }
@@ -769,7 +785,7 @@ main {
 }
 
 .promos .carnival-promo .text .cta-links .cta-link i {
-  color: #06c;
+  color: #2997ff;
   font-size: 1.2rem;
   margin-left: 0.4rem;
 }
@@ -819,7 +835,7 @@ main {
 }
 
 .promos .come-to-iphone-promo .text .cta-links i {
-  color: #06c;
+  color: #2997ff;
   font-size: 1.2rem;
   margin-left: 0.4rem;
 }
@@ -883,7 +899,7 @@ main {
 }
 
 .promos .fitness-plus-promo .text .cta-links .cta-link i {
-  color: #06c;
+  color: #2997ff;
   font-size: 1.2rem;
   margin-left: 0.4rem;
 }
@@ -947,7 +963,7 @@ main {
 }
 
 .promos .air-pods-promo .text .cta-links .cta-link i {
-  color: #06c;
+  color: #2997ff;
   font-size: 1.2rem;
   margin-left: 0.4rem;
 }
@@ -1133,6 +1149,8 @@ footer .copy {
 footer .legal-links {
   display: flex;
   align-items: center;
+  max-width: 90vw;
+  flex-wrap: wrap;
   padding-bottom: 2.5rem;
 }
 
@@ -1145,6 +1163,7 @@ footer .legal-links .legal-link-divisor {
 
 footer .legal-links a {
   letter-spacing: 0.08rem;
+  white-space: nowrap;
 }
 
 /* FOOTER END */

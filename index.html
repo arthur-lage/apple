@@ -22,6 +22,7 @@
     <!-- STYLES START -->
 
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
 
     <!-- STYLES END -->
 
@@ -30,6 +31,7 @@
     <script src="./scripts/carnival-marquee.js" defer></script>
     <script src="./scripts/dropdown.js" defer></script>
     <script src="./scripts/searchbar.js" defer></script>
+    <script src="./scripts/mobile-menu.js" defer></script>
 
     <!-- SCRIPTS END -->
   </head>
@@ -38,7 +40,7 @@
 
     <header>
       <nav>
-        <ul>
+        <ul class="desktop-menu">
           <a href="/" id="logo">
             <i style="color: #fff; font-size: 2rem" class="fab fa-apple"></i>
           </a>
@@ -61,8 +63,8 @@
             </button>
           </li>
           <li>
-            <div class="dropdown" data-dropdown>
-              <button data-dropdown-button id="shopping-cart-button">
+            <div class="dropdown">
+              <button class="shopping-cart-button">
                 <i
                   style="color: #fff; font-size: 1.6rem"
                   class="fas fa-shopping-bag"
@@ -118,6 +120,69 @@
               <a href="#">AirPods</a>
               <a href="#">AirTag</a>
             </div>
+          </div>
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu-button"></div>
+          <a id="mobile-header-logo" href="/">
+            <img src="./assets/logo-header.svg" alt="Apple" />
+          </a>
+          <div class="dropdown">
+            <button class="shopping-cart-button">
+              <i
+                style="color: #fff; font-size: 1.6rem"
+                class="fas fa-shopping-bag"
+              ></i>
+            </button>
+            <div class="dropdown-menu">
+              <h3>Sua sacola está vazia.</h3>
+              <div class="cart-links">
+                <div class="cart-link">
+                  <i class="fas fa-shopping-bag"></i>
+                  <span>Sacola</span>
+                </div>
+                <div class="cart-link">
+                  <i class="fas fa-bookmark"></i>
+                  <span>Itens salvos</span>
+                </div>
+                <div class="cart-link">
+                  <i class="fas fa-cube"></i>
+                  <span>Pedidos</span>
+                </div>
+                <div class="cart-link">
+                  <i class="fas fa-gear"></i>
+                  <span>Conta</span>
+                </div>
+                <div class="cart-link">
+                  <i class="fas fa-user-circle"></i>
+                  <span>Entrar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu-nav">
+            <div class="mobile-menu-search">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                name="search-mobile"
+                id="search-mobile"
+                placeholder="Buscar em apple.com"
+              />
+            </div>
+            <div class="mobile-menu-divisor"></div>
+            <ul class="mobile-menu-nav-items">
+              <li><a href="#">Loja</a></li>
+              <li><a href="#">Mac</a></li>
+              <li><a href="#">iPad</a></li>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">Watch</a></li>
+              <li><a href="#">AirPods</a></li>
+              <li><a href="#">TV e Casa</a></li>
+              <li><a href="#">Só na Apple</a></li>
+              <li><a href="#">Acessórios</a></li>
+              <li><a href="#">Suporte</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -381,11 +446,11 @@
             <h3>Seu novo superpoder.</h3>
             <div class="cta-links">
               <div class="cta-link">
-                <a href="#" class="link">Saiba mais</a>
+                <a href="#" class="link-light">Saiba mais</a>
                 <i class="fas fa-chevron-right"></i>
               </div>
               <div class="cta-link">
-                <a href="#" class="link">Comprar</a>
+                <a href="#" class="link-light">Comprar</a>
                 <i class="fas fa-chevron-right"></i>
               </div>
             </div>
@@ -406,7 +471,7 @@
             </h3>
             <div class="cta-links">
               <div class="cta-link">
-                <a href="#" class="link">Ver tudo</a>
+                <a href="#" class="link-light">Ver tudo</a>
                 <i class="fas fa-chevron-right"></i>
               </div>
             </div>
@@ -426,7 +491,7 @@
             </h2>
 
             <div class="cta-links">
-              <a href="#" class="link">Saiba mais</a>
+              <a href="#" class="link-light">Saiba mais</a>
               <i class="fas fa-chevron-right"></i>
             </div>
           </div>
@@ -449,11 +514,11 @@
             </h3>
             <div class="cta-links">
               <div class="cta-link">
-                <a href="#" class="link">Saiba mais</a>
+                <a href="#" class="link-light">Saiba mais</a>
                 <i class="fas fa-chevron-right"></i>
               </div>
               <div class="cta-link">
-                <a href="#" class="link">Teste gratuito*</a>
+                <a href="#" class="link-light">Teste gratuito*</a>
                 <i
                   class="fas fa-arrow-up"
                   style="font-size: 1.4rem; transform: rotateZ(45deg)"
@@ -474,11 +539,11 @@
             <h3>Tudo novo. Até o Áudio Espacial.</h3>
             <div class="cta-links">
               <div class="cta-link">
-                <a href="#" class="link">Saiba mais</a>
+                <a href="#" class="link-light">Saiba mais</a>
                 <i class="fas fa-chevron-right"></i>
               </div>
               <div class="cta-link">
-                <a href="#" class="link">Comprar</a>
+                <a href="#" class="link-light">Comprar</a>
                 <i class="fas fa-chevron-right"></i>
               </div>
             </div>
@@ -499,7 +564,7 @@
             <h2>Ruptura</h2>
             <h3>Direção de Ben Stiller</h3>
             <div class="cta-link">
-              <a href="#" class="link"
+              <a href="#" class="link-light"
                 >Assista agora
 
                 <i class="fas fa-circle-play"></i>
