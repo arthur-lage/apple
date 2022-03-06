@@ -29,6 +29,7 @@
 
     <script src="./scripts/carnival-marquee.js" defer></script>
     <script src="./scripts/dropdown.js" defer></script>
+    <script src="./scripts/searchbar.js" defer></script>
 
     <!-- SCRIPTS END -->
   </head>
@@ -52,7 +53,7 @@
           <li><a href="#">Acessórios</a></li>
           <li><a href="#">Suporte</a></li>
           <li>
-            <button>
+            <button id="search-button">
               <i
                 style="color: #fff; font-size: 1.6rem"
                 class="fas fa-search"
@@ -95,6 +96,30 @@
             </div>
           </li>
         </ul>
+        <div class="search-section">
+          <div class="search-input-wrapper">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Buscar em apple.com"
+            />
+          </div>
+          <button id="close-search">
+            <i class="fas fa-close"></i>
+          </button>
+          <div class="search-suggestions">
+            <span class="quick-links-text">LINKS RÁPIDOS</span>
+            <div class="quick-links">
+              <a href="#">Perguntas Frequentes sobre a Visita na Apple Store</a>
+              <a href="#">Comprar na Apple Store online</a>
+              <a href="#">Acessórios</a>
+              <a href="#">AirPods</a>
+              <a href="#">AirTag</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -777,5 +802,11 @@
     </div>
 
     <!-- FOOTER END -->
+
+    <!-- OVERLAY START -->
+
+    <div class="search-overlay"></div>
+
+    <!-- OVERLAY END -->
   </body>
 </html>
