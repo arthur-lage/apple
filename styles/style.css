@@ -579,7 +579,7 @@ header nav .mobile-menu {
 .back-to-school .image img {
   width: 100%;
   height: 61.7rem;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* BACK TO SCHOOL END */
