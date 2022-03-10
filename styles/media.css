@@ -335,7 +335,6 @@
     opacity: 1;
     max-height: 25rem;
     margin-top: 1rem;
-    overflow: auto;
   }
 
   footer .mobile-directory .directory-column label {
