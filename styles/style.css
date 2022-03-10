@@ -1098,6 +1098,10 @@ footer .directory {
   padding: 0.5rem 0 2rem 0;
 }
 
+footer .mobile-directory {
+  display: none;
+}
+
 footer .directory .directory-column {
   display: flex;
   flex-direction: column;
