@@ -291,6 +291,7 @@ header nav .search-section {
 header nav .search-section .search-input-wrapper {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 header nav .search-section i {
@@ -1175,7 +1176,7 @@ footer .legal-links a {
 /* SEARCH OVERLAY START */
 
 .search-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
