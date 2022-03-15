@@ -114,6 +114,27 @@
     opacity: 1;
   }
 
+  header nav .dropdown {
+    position: static;
+  }
+
+  header nav .dropdown .dropdown-menu {
+    width: 100vw;
+    height: 40vh;
+    z-index: 999999;
+    position: absolute;
+    left: 0;
+    transform: translateX(0);
+    border-radius: 0;
+    top: var(--header-height);
+  }
+
+  header nav .dropdown .dropdown-menu .cart-links {
+    max-width: 75vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   header nav .mobile-menu .mobile-menu-search {
     max-width: 60rem;
     width: 100%;
@@ -370,11 +391,8 @@
     transform: rotateZ(45deg);
   }
 
-  footer
-    .mobile-directory
-    .directory-column
-    ul li {
-    padding: .5rem 0;
+  footer .mobile-directory .directory-column ul li {
+    padding: 0.5rem 0;
     font-size: 1.3rem;
   }
 }
