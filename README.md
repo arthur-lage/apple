@@ -1,6 +1,4 @@
-<h1>Apple</h1>
-
-<img src="assets/logo-header.svg" width="40" />
+<h1 align="center">Apple</h1>
 
 # ✉ About
 
@@ -10,12 +8,12 @@ A responsive clone of 🍎 Apple's 🍎 website.
 
 # 🌆 Images
 
-<img src="assets/screenshot-1" />
-<img src="assets/screenshot-2" />
-<img src="assets/screenshot-3" />
-<img src="assets/screenshot-4" />
-<img src="assets/screenshot-5" />
-<img src="assets/screenshot-6" />
+<img src="./assets/screenshot-1.png" />
+<img src="./assets/screenshot-2.png" />
+<img src="./assets/screenshot-3.png" />
+<img src="./assets/screenshot-4.png" />
+<img src="./assets/screenshot-5.png" />
+<img src="./assets/screenshot-6.png" />
 
 # 👩‍💻 Technologies Used
 
