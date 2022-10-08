@@ -1,6 +1,6 @@
-<h1 align="center">Apple</h1>
+# Apple
 
-# ✉ About
+## ✉ About
 
 A responsive clone of 🍎 Apple's 🍎 website.
 
